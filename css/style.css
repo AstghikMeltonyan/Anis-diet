@@ -1,0 +1,739 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100px;
+  background: rgb(203,188,203);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 5px 0px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1330px;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px 0 20px;
+}
+
+.nav {
+  width: 70%;
+}
+
+.nav__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  line-height: 59px;
+  color: rgb(81, 46, 79);
+  /* color: rgb(121,69,119 */
+  /*active color rgb(210, 180, 209) */
+}
+
+.lang-select {
+  width: 168px;
+  height: 45px;
+  padding: 0 14px;
+  margin-right: 40px;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 14px;
+  font-size: 16px;
+  color: #fff;
+  background: 172, 151, 170;
+}
+
+.lang-select.selected {
+  background: #000;
+}
+
+.log-btn {
+  font-size: 18px;
+  color: #000;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.log-btn svg {
+  position: relative;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* section {
+  background-attachment: fixed;
+} */
+.nav-hero {
+  position: relative;
+}
+
+.hero-nav {
+  position: absolute;
+  top: 60px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 464px;
+  height: 395px;
+  padding-top: 50px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.hero-nav__text,
+.hero-nav__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+.hero-nav__text:last-of-type {
+  margin-bottom: 40px;
+}
+
+.hero-nav__btn,
+.blog__btn,
+.about__btn {
+  display: inline-block;
+  padding: 16px 40px;
+  border: 1px solid rgb(81, 46, 79);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  transition: 0.3s color ease-in-out, 0.3s background ease-in-out;
+}
+
+.hero-nav__btn:hover,
+.blog__btn:hover,
+.about__btn:hover {
+  color: #fff;
+  background: rgb(81, 46, 79);
+}
+
+/* =============== Hero ============= */
+.main-hero {
+  /* position: fixed; */
+  margin: 0 auto;
+  width: 90%;
+  background-image: url("../img/hero_1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: center; */
+}
+
+.hero {
+  position: relative;
+  min-height: 655px;
+}
+
+/* =============== About =============== */
+.about {
+  background: #fff;
+}
+
+.about-block {
+  display: flex;
+  margin: 0 auto;
+  min-height: 655px;
+  flex-wrap: wrap;
+  max-width: 980px;
+  padding: 50px 20px;
+  background-color: rgba(203, 188, 203, 0.32);
+}
+
+.about-img {
+  display: inline-block;
+  margin-right: 40px;
+  width: 544px;
+  height: 544px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* .hero1-img:hover {
+  
+} */
+
+.about-desc {
+  max-width: 328px;
+  padding-left: 30px;
+}
+
+.about__title {
+  margin: 0;
+  margin-left: -15px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(81, 46, 79);
+}
+
+.about__text {
+  margin: 0;
+  font-style: 21px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.about__text:last-of-type {
+  margin-bottom: 20px;
+}
+
+.about__btn {
+  padding: 16px 56px;
+}
+
+/* ============= Blog ============ */
+.blog {
+  background: #fff;
+}
+
+.blog-container {
+  max-width: 1794px;
+}
+
+.blog-block {
+  display: flex;
+  max-width: 1794px;
+  min-height: 480px;
+  background: rgb(228, 220, 228);
+}
+
+.blog-img {
+  width: 50%;
+  height: 480px;
+  margin-right: 100px;
+  object-fit: cover;
+}
+
+.hero__0 {
+  /* position: relative; */
+  /* z-index: 0;
+  display: inline-block;
+  width: 100%;
+  background: transparent;  
+  border: 1px solid red;
+  min-height: 600px; */
+  margin: 0 auto;
+  width: 90%;
+  background-image: url("../img/hero_1.jpg");
+  min-height: 1800px;
+}
+
+.blog-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+}
+
+.blog__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.blog__text {
+  width: 440px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.blog__btn {
+  width: 200px;
+  text-align: center;
+}
+
+/* ================ Gallery =============== */
+.gallery {
+  background: #fff;
+}
+
+.galerry-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 980px;
+  min-height: 360px;
+  padding: 30px 0;
+  list-style: none;
+}
+
+.gallery-item {
+  width: 32%;
+  min-height: 320px;
+  background: #fff;
+  border: 1px solid rgb(201, 253, 201);
+}
+
+.gallery-btn {
+  width: 100%;
+  cursor: pointer;
+  text-align: start;
+  /* font-size: 0;
+  line-height: 0; */
+  padding: 0;
+}
+
+.gallery__text {
+  width: 70%;
+  height: 70px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.gallery-img {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 240px;
+  border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+.gallery-img-1 {
+  background-image: url("../img/gallery-1-img.webp");
+}
+
+.gallery-img-2 {
+  background-image: url("../img/gallery-2-img.webp");
+}
+
+.gallery-img-3 {
+  background-image: url("../img/gallery-3-img.webp");
+}
+/* =================== Mine Blog ===================*/
+.blog-nav-list {
+  position: absolute;
+  top: 99px;
+  z-index: 1000;
+  max-width: 330px;
+  min-height: 468px;
+  background: rgba(232, 230, 230, 0.6);
+  border: 1px solid transparent;
+  border-top: none;
+}
+
+.blog-nav-item {
+  height: 52px;
+  padding: 0 10px;
+  color: rgb(36, 66, 59);
+  /* background: rgba(203, 188, 203, 0.9); */
+  background: rgba(203,188,203,0.74);
+  transition: 0.3s background ease-in-out;
+}
+
+.blog-nav-link {
+  width: 100%;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.blog-nav-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.blog-nav-item:hover {
+  background: rgba(232, 230, 230, 0.75);
+}
+
+.main-blog {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/blog.bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog-page-container {
+  overflow: hidden;
+}
+
+.blog-page-content {
+  max-width: 888px;
+  min-height: 975px;
+  margin: 0 auto;
+  padding-top: 60px;
+  background: rgb(203, 188, 203);
+  overflow: hidden;
+}
+
+.blog-page-hero {
+  width: 100%;
+  min-height: 800px;
+}
+
+.blog-page-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+}
+
+.blog-page-item {
+  max-width: 264px;
+  margin-bottom: 20px;
+  min-height: 420px;
+  border: 1px solid rgb(203, 188, 203);
+}
+
+.blog-page-btn {
+  height: 370px;
+  margin-bottom: 50px;
+}
+
+.blog-page-desc {
+  padding: 0 10px;
+}
+
+.blog-page-date,
+.article__date {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blog-page__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.blog-page__text {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.blog-img-4 {
+  background-image: url("../img/blog-img-4.webp");
+  height: 220px;
+}
+
+.blog-img-5 {
+  background-image: url("../img/blog-img-5.webp");
+}
+
+.blog-img-6 {
+  background-image: url("../img/blog-img-6.webp");
+}
+
+.view {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url("../img/view.svg");
+}
+
+.comment {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url("../img/comment.svg");
+  margin-right: 100px;
+}
+
+.like {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  /* background-image: url('../img/like.svg'); */
+}
+
+/* like *************************** */
+.like-heart {
+  opacity: 1;
+  fill: #e84a43;
+  stroke: none;
+}
+
+.blog-page-icons {
+  position: relative;
+  padding: 12px 0;
+}
+
+.blog-page-icons::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 10px;
+  height: 1px;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.like path {
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1.5px;
+  transition: fill;
+}
+
+/* ================ Recipes ============== */
+.blog-page-section {
+  margin-bottom: 100px;
+}
+
+.recipes {
+  padding: 20px;
+}
+.recipes-list {
+  display: flex;
+  justify-content: center;
+}
+
+.recipes-items:not(:last-child) {
+  margin-right: 14px;
+}
+
+/* ====================== Nutrition ===================== */
+
+.nutrition-hero {
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.main-nutrition {
+  width: 100%;
+  background-image: url("../img/blog.bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 100%;
+}
+
+.nutrition-container {
+  max-width: 980px;
+  overflow: hidden;
+}
+
+.nutrition-bg {
+  min-height: 352px;
+  background-image: url("../img/snndakarg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nutrition-title {
+  margin: 0;
+  padding: 34px 46px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 400;
+  color: rgb(81, 46, 79);
+  background: #fff;
+}
+
+.nutrition-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nutrition-item {
+  max-width: 48%;
+  min-height: 442px;
+  margin-bottom: 30px;
+  padding: 48px;
+  background: #fff;
+}
+
+.nutrition-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.nutrition__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nutrition__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.nutrition__img {
+  display: inline-block;
+  width: 358px;
+  height: 212px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.nutrition__img1 {
+  background-image: url('../img/diet-1.webp');
+} 
+
+.nutrition__img2 {
+  background-image: url('../img/diet-2..webp');
+} 
+
+.nutrition__img3 {
+  background-image: url('../img/diet-3.webp');
+} 
+
+.nutrition__img4 {
+  background-image: url('../img/diet-1.webp');
+} 
+
+.nutrition__img5 {
+  background-image: url('../img/diet-5.webp');
+} 
+
+.nutrition__img6 {
+  background-image: url('../img/diet-6.webp');
+} 
+/* ============ Footer ============ */
+.footer {
+  width: 100%;
+  min-height: 100px;
+  background: rgba(255, 234, 234, 0.432);
+  /* opacity: 0.2; */
+}
+
+/* ======================== Articles ======================== */
+
+.avocado {
+  position: absolute;
+  top: 150%;
+  left: 20%;
+  width: 888px;
+  min-height: 426px;
+  background: rgb(203,188,203);
+}
+
+.avocado__recipe {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.avocado-article-img {
+  width: 408px;
+  height: 306px;
+}
+
+.avocado-content {
+  width: 48%;
+  padding: 20px;
+}
+
+.article__date {
+  display: block;
+}
+
+.scientes__link {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #fff;
+  background: rgb(121, 69, 119);
+}
+
+.scientes__link:hover {
+  opacity: .8;
+}
+
+.avocado-subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.avpcado-desc {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
