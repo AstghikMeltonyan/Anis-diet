@@ -14,8 +14,8 @@
     <div class="container header-container">
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav-item nav-hero"><a href="./index.html">Գլխավոր</a></li>
-          <li class="nav-item"><a href="./blog.html">Բլոգ</a>
+          <li class="nav-item nav-hero"><a href="./index.html" target="_blank">Գլխավոր</a></li>
+          <li class="nav-item"><a href="#" target="_blank">Բլոգ</a>
             <div class="blog-nav">
               <ul class="blog-nav-list list-reset">
                 <li class="blog-nav-item"><a class="blog-nav-link" href="#">Առողջ, համեղ, հեշտ</a></li>
@@ -228,7 +228,7 @@
       <section class="recipes">
         <div class="container">
           <ul class="recipes-list list-reset">
-            <li class="recipes-items"><button class="recipes-btn btn-reset">Ավոկադո</button></li>
+            <li class="recipes-items"><button class="recipes-btn avocado-btn btn-reset">Ավոկադո</button></li>
             <li class="recipes-items"><button class="recipes-btn btn-reset">Churros</button></li>
             <li class="recipes-items"><button class="recipes-btn btn-reset">Fish</button></li>
             <li class="recipes-items"><button class="recipes-btn btn-reset">Nutritional yeast</button></li>
@@ -240,23 +240,36 @@
         </div>
       </section>
     </div>
+    <div class="avocado-window">
+      <article>
+        <div class="avocado">
+          <button class="close-btn btn-reset">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z" fill="none" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
+                fill="none" />
+            </svg>
+          </button>
+          <div class="avocado__recipe">
+            <img class="avocado-article-img" src="./img/blog-img-5.webp" alt="">
+            <div class="avocado-content">
+              <span class="article__date">Jun 7, 2022 2min</span>
+              <a href="#" class="scientes__link">Ապացուցողական սննդաբանություն</a>
+              <h2 class="avocado-subtitle">Իմ Սիրելի Ավոկադոն</h2>
+              <h3 class="avpcado-desc">Ավոկադո Հիմնական սննդային առավելություները Ինչպես կտրել՝ լավագույնս օգտակար մասը
+                ստանալու համար</h3>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
   </main>
-  <article>
-    <div class="avocado">
-      <button class="close__btn btn-reset"></button>
-      <div class="avocado__recipe">
-        <img class="avocado-article-img" src="./img/blog-img-5.webp" alt="">
-        <div class="avocado-content">
-          <span class="article__date">Jun 7, 2022 2min</span>
-          <a href="#" class="scientes__link">Ապացուցողական սննդաբանություն</a>
-          <h2 class="avocado-subtitle">Իմ Սիրելի Ավոկադոն</h2>
-          <h3 class="avpcado-desc">Ավոկադո Հիմնական սննդային առավելություները Ինչպես կտրել՝ լավագույնս օգտակար մասը
-            ստանալու համար</h3>
-        </div>
-      </div>
-    </div>
-  </article>
-</body>
+<footer class="footer">
+</footer>
+  <script src="./js/script.js"></script>
+</body> 
 
 </html>

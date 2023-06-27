@@ -43,7 +43,7 @@ img {
   left: 0;
   width: 100%;
   min-height: 100px;
-  background: rgb(203,188,203);
+  background: rgb(203, 188, 203);
   box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 5px 0px;
 }
 
@@ -77,23 +77,6 @@ img {
   /*active color rgb(210, 180, 209) */
 }
 
-.lang-select {
-  width: 168px;
-  height: 45px;
-  padding: 0 14px;
-  margin-right: 40px;
-  background: transparent;
-  border: 1px solid black;
-  border-radius: 14px;
-  font-size: 16px;
-  color: #fff;
-  background: 172, 151, 170;
-}
-
-.lang-select.selected {
-  background: #000;
-}
-
 .log-btn {
   font-size: 18px;
   color: #000;
@@ -110,9 +93,6 @@ img {
   margin-right: 10px;
 }
 
-/* section {
-  background-attachment: fixed;
-} */
 .nav-hero {
   position: relative;
 }
@@ -164,6 +144,7 @@ img {
 /* =============== Hero ============= */
 .main-hero {
   /* position: fixed; */
+  padding-top: 200px;
   margin: 0 auto;
   width: 90%;
   background-image: url("../img/hero_1.jpg");
@@ -378,7 +359,7 @@ img {
   padding: 0 10px;
   color: rgb(36, 66, 59);
   /* background: rgba(203, 188, 203, 0.9); */
-  background: rgba(203,188,203,0.74);
+  background: rgba(203, 188, 203, 0.74);
   transition: 0.3s background ease-in-out;
 }
 
@@ -558,8 +539,9 @@ img {
 /* ====================== Nutrition ===================== */
 
 .nutrition-hero {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 30px;
+  padding-top: 120px;
 }
 
 .main-nutrition {
@@ -603,7 +585,7 @@ img {
 
 .nutrition-item {
   max-width: 48%;
-  min-height: 442px;
+  min-height: 400px;
   margin-bottom: 30px;
   padding: 48px;
   background: #fff;
@@ -642,45 +624,73 @@ img {
 }
 
 .nutrition__img1 {
-  background-image: url('../img/diet-1.webp');
-} 
+  background-image: url("../img/diet-1.webp");
+}
 
 .nutrition__img2 {
-  background-image: url('../img/diet-2..webp');
-} 
+  background-image: url("../img/diet-2..webp");
+}
 
 .nutrition__img3 {
-  background-image: url('../img/diet-3.webp');
-} 
+  background-image: url("../img/diet-3.webp");
+}
 
 .nutrition__img4 {
-  background-image: url('../img/diet-1.webp');
-} 
+  background-image: url("../img/diet-1.webp");
+}
 
 .nutrition__img5 {
-  background-image: url('../img/diet-5.webp');
-} 
+  background-image: url("../img/diet-5.webp");
+}
 
 .nutrition__img6 {
-  background-image: url('../img/diet-6.webp');
-} 
+  background-image: url("../img/diet-6.webp");
+}
 /* ============ Footer ============ */
 .footer {
   width: 100%;
   min-height: 100px;
-  background: rgba(255, 234, 234, 0.432);
-  /* opacity: 0.2; */
+  background: rgb(203, 188, 203);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 5px 0px;
 }
 
 /* ======================== Articles ======================== */
+.avocado-window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  visibility: hidden;
+}
 
 .avocado {
-  position: absolute;
-  top: 150%;
+  position: fixed;
+  top: 20%;
   left: 20%;
+  z-index: 1001;
   width: 888px;
   min-height: 426px;
-  background: rgb(203,188,203);
+  background: rgb(203, 188, 203);
+}
+
+.avocado-window--active {
+  visibility: visible;
+}
+
+.recipes-btn {
+  cursor: pointer;
+}
+
+.recipes-btn:hover {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.blog-page--inactive {
+  visibility: hidden;
 }
 
 .avocado__recipe {
@@ -719,7 +729,7 @@ img {
 }
 
 .scientes__link:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .avocado-subtitle {
@@ -736,4 +746,17 @@ img {
   font-weight: 400;
   line-height: 24px;
   color: #000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 20px;
+  stroke: #fff;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  stroke: #000000;
 }
