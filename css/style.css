@@ -77,6 +77,15 @@ img {
   /*active color rgb(210, 180, 209) */
 }
 
+.nav-item a {
+  padding-bottom: 5px;
+  transition: 2s all ease-in-out;
+}
+
+.nav-item a:hover {
+  border-bottom: 1px solid rgb(81, 46, 79);
+}
+
 .log-btn {
   font-size: 18px;
   color: #000;
@@ -239,20 +248,6 @@ img {
   object-fit: cover;
 }
 
-.hero__0 {
-  /* position: relative; */
-  /* z-index: 0;
-  display: inline-block;
-  width: 100%;
-  background: transparent;  
-  border: 1px solid red;
-  min-height: 600px; */
-  margin: 0 auto;
-  width: 90%;
-  background-image: url("../img/hero_1.jpg");
-  min-height: 1800px;
-}
-
 .blog-desc {
   display: flex;
   flex-direction: column;
@@ -309,8 +304,6 @@ img {
   width: 100%;
   cursor: pointer;
   text-align: start;
-  /* font-size: 0;
-  line-height: 0; */
   padding: 0;
 }
 
@@ -343,41 +336,6 @@ img {
   background-image: url("../img/gallery-3-img.webp");
 }
 /* =================== Mine Blog ===================*/
-.blog-nav-list {
-  position: absolute;
-  top: 99px;
-  z-index: 1000;
-  max-width: 330px;
-  min-height: 468px;
-  background: rgba(232, 230, 230, 0.6);
-  border: 1px solid transparent;
-  border-top: none;
-}
-
-.blog-nav-item {
-  height: 52px;
-  padding: 0 10px;
-  color: rgb(36, 66, 59);
-  /* background: rgba(203, 188, 203, 0.9); */
-  background: rgba(203, 188, 203, 0.74);
-  transition: 0.3s background ease-in-out;
-}
-
-.blog-nav-link {
-  width: 100%;
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 17px;
-}
-
-.blog-nav-item:not(:last-child) {
-  margin-bottom: 6px;
-}
-
-.blog-nav-item:hover {
-  background: rgba(232, 230, 230, 0.75);
-}
 
 .main-blog {
   width: 100%;
@@ -390,6 +348,7 @@ img {
 
 .blog-page-container {
   overflow: hidden;
+  padding-top: 260px;
 }
 
 .blog-page-content {
@@ -399,11 +358,6 @@ img {
   padding-top: 60px;
   background: rgb(203, 188, 203);
   overflow: hidden;
-}
-
-.blog-page-hero {
-  width: 100%;
-  min-height: 800px;
 }
 
 .blog-page-list {
@@ -654,6 +608,63 @@ img {
   box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 5px 0px;
 }
 
+/* ============================ Category =================== */
+.main-category {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/blog.bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.category-container {
+  width: 1120px;
+  padding-top: 200px;
+}
+
+.category__title {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 60px;
+  color: rgb(81, 46, 79);
+}
+
+.category-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-nav-list {
+  /* background: rgb(203, 188, 203); */
+  width: 32%;
+  border-top: none;
+}
+
+.category-nav-item {
+  padding: 30px;
+  color: rgb(81, 46, 79);
+  /* background: rgba(203, 188, 203, 0.9); */
+  background: rgba(204, 178, 204, 0.74);
+  transition: 0.3s background ease-in-out;
+}
+
+.category-nav-link {
+  width: 100%;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.category-nav-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.category-nav-item:hover {
+  background: rgba(232, 230, 230, 0.75);
+}
+
 /* ======================== Articles ======================== */
 .avocado-window {
   position: fixed;
@@ -759,4 +770,85 @@ img {
 
 .close-btn:hover {
   stroke: #000000;
+}
+
+/*  ========================= Aboutme ==================== */
+.aboutme-container {
+  max-width: 1400px;
+  padding: 40px;
+  padding-top: 140px;
+}
+
+.main-about {
+  width: 100%;
+  background: rgba(148, 132, 161, 0.67);;
+}
+
+.aboutme-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  background: rgb(219, 219, 219);
+}
+
+.my-pic {
+  width: 55%;
+  margin-right: 80px;
+  padding: 40px;
+  background-color: rgb(148, 132, 161);
+  text-align: center;
+}
+
+.my-pic img {
+  width: 450px;
+  height: 600px;
+}
+
+.aboutme-content {
+  width: 45%;
+  padding-left: 60px;
+}
+
+.aboutme__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.aboutme__text {
+  margin: 0;
+  width: 60%;
+}
+
+.aboutme__text:first-of-type {
+  margin-bottom: 20px;
+}
+
+.aboutme-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  background-image: url('../img/aboutme.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutme-nav,
+.aboutme-social {
+  display: flex;
+  justify-content: end;
+  padding: 10px 40px;
+}
+
+.aboutme-nav-item,
+.aboutme-social-item {
+  font-size: 18px;
+  color: #fff;
+}
+
+.aboutme-nav-item:not(:last-child),
+.aboutme-social-item:not(:last-child) {
+  margin-right: 24px;
 }
