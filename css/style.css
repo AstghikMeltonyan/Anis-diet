@@ -79,7 +79,6 @@ img {
 }
 
 .nav-item a:hover {
-  padding-bottom: 5px;
   border-bottom: 1px solid rgb(81, 46, 79);
 }
 
@@ -149,8 +148,10 @@ img {
 
 
 /* =============== Hero ============= */
+
 .main-hero {
   padding-top: 500px;
+  height: 100%;
   width: 100%;
   background-image: url("../img/hero_1.jpg");
   background-repeat: no-repeat;

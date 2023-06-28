@@ -15,11 +15,9 @@ window.onload = (e) => {
       });
     }else {
       list.forEach(el=> {
-        console.log(333);
         el.parentElement.parentElement.classList.remove('hide');
       })
     }
-    // console.log(this.value);
   };
 };
 

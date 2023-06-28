@@ -1,0 +1,174 @@
+/* .main-hero,
+.hero-nav {
+  display: none;
+} */
+/* .main-tabs{
+  display: none;
+} */
+
+/* .shorus-tabs {
+  display: none;
+} */
+
+.main-tabs {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/avocado.bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.shorus-tabs,
+.salmon-tabs,
+.macchees-tabs {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 300px 40px 40px 40px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-tabs-container {
+  margin: 0 auto;
+  padding: 60px;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.shorus-hero,
+.hero-components,
+.cooking,
+.testy-idea,
+.calories {
+  margin: 0 auto;
+  width: 80%;
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.tab__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tab__subtitle,
+.tab__lesstitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: italic;
+  color: rgb(121, 69, 119);
+}
+
+.tab__text,
+.cooking__time {
+  margin: 0;
+  margin-bottom: 30px;
+  font-style: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.cooking__time {
+  display: block;
+  margin-bottom: 0;
+}
+
+.tab__img {
+  width: 740px;
+  height: 740px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.tab__item {
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tab__lesstitle {
+  font-size: 20px;
+}
+
+.testy__title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/* ================================= Salmon ====================== */
+
+.person__count {
+  display: block;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.hero-tabs-container {
+  position: relative;
+}
+
+.testy-idea {
+  position: relative;
+}
+
+.idea__text::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 180px;
+  background: rgb(121, 69, 119);
+  left: 20px;
+  top: 18%;
+}
+
+.idea__title,
+.idea__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: italic;
+  color: rgb(121, 69, 119);
+}
+
+.idea__text {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.more__info {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 200px;
+  background: #fff;
+}
+
+.glavniy-tabs {
+  display: none;
+}
+
+.glavniy-tabs.active {
+  display: initial;
+}
+
+.main-hero.active  {
+  display: none;
+}
+
+.main-hero.active + .main-tabs {
+  padding-top: 500px;
+}

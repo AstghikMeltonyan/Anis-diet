@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/hero.css">
   <title>nmeltonyan</title>
 </head>
 
@@ -95,75 +96,265 @@
     </div>
   </header>
   <main class="main">
-    <div class="main-hero">
-      <section class="about">
-        <div class="container">
-          <div class="about-block">
-            <img class="about-img" src="./img/hero-1.jpeg" alt="">
-            <div class="about-desc">
-              <h2 class="about__title">Hello</h2>
-              <p class="about__text">I started Evidence-Based Nutrition with the goal of offering readers a state of the
-                art knowledge in nutrition and health, as well as to share my thoughts and experiences. Take some time
-                to
-                explore the blog, make your own decisions on what and how to eat based on Evidence-Based knowledge.
-              </p>
-              <p class="about__text">Create, mix, improvise! Make your own fun meal using ingredients that make you
-                happy
-                and, the most
-                important, enjoy your food!</p>
-              <a href="#" class="about__btn">Read more</a>
+      <div class="main-hero" data-target="four">
+        <section class="about">
+          <div class="container">
+            <div class="about-block">
+              <img class="about-img" src="./img/hero-1.jpeg" alt="">
+              <div class="about-desc">
+                <h2 class="about__title">Hello</h2>
+                <p class="about__text">I started Evidence-Based Nutrition with the goal of offering readers a state of
+                  the
+                  art knowledge in nutrition and health, as well as to share my thoughts and experiences. Take some time
+                  to
+                  explore the blog, make your own decisions on what and how to eat based on Evidence-Based knowledge.
+                </p>
+                <p class="about__text">Create, mix, improvise! Make your own fun meal using ingredients that make you
+                  happy
+                  and, the most
+                  important, enjoy your food!</p>
+                <a href="#" class="about__btn">Read more</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="blog">
-        <div class="container blog-container">
-          <div class="blog-block">
-            <img class="blog-img" src="./img/hero-2.jpg" alt="">
-            <div class="blog-desc">
-              <h2 class="blog__title">Blog</h2>
-              <p class="blog__text">Find new recipes, meal plans, menu, learn what are the latest discoveries in
-                nutritional science.
-              </p>
-              <a href="#" class="blog__btn">Read more</a>
+        </section>
+        <section class="blog">
+          <div class="container blog-container">
+            <div class="blog-block">
+              <img class="blog-img" src="./img/hero-2.jpg" alt="">
+              <div class="blog-desc">
+                <h2 class="blog__title">Բլոգ</h2>
+                <p class="blog__text">Find new recipes, meal plans, menu, learn what are the latest discoveries in
+                  nutritional science.
+                </p>
+                <a href="#" class="blog__btn">Read more</a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="container gallery-container">
-          <ul class="galerry-list list-reset">
-            <li class="gallery-item">
-              <button class="gallery-btn btn-reset">
-                <span class="gallery-img gallery-img-1 bg-img"></span>
-                <div class="gallery-desc">
-                  <p class="gallery__text">Շուրոս</p>
-                </div>
-              </button>
-            </li>
-            <li class="gallery-item">
-              <button class="gallery-btn btn-reset">
-                <span class="gallery-img gallery-img-2 bg-img"></span>
-                <div class="gallery-desc">
-                  <p class="gallery__text">Սաղմոն Ջեռոցում Բաթաթով և Սնկով</p>
-                </div>
-              </button>
-            </li>
-            <li class="gallery-item">
-              <button class="gallery-btn btn-reset">
-                <span class="gallery-img gallery-img-3 bg-img"></span>
-                <div class="gallery-desc">
-                  <p class="gallery__text">Mac and Cheese</p>
-                </div>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
+        </section>
+        <section class="gallery">
+          <div class="container gallery-container">
+            <ul class="galerry-list list-reset">
+              <li class="gallery-item">
+                <button class="gallery-btn btn-reset g1-btn" data-path="one">
+                  <span class="gallery-img gallery-img-1 bg-img"></span>
+                  <div class="gallery-desc">
+                    <p class="gallery__text">Շուրոս</p>
+                  </div>
+                </button>
+              </li>
+              <li class="gallery-item">
+                <button class="gallery-btn btn-reset g2-btn" data-path="two">
+                  <span class="gallery-img gallery-img-2 bg-img"></span>
+                  <div class="gallery-desc">
+                    <p class="gallery__text">Սաղմոն Ջեռոցում Բաթաթով և Սնկով</p>
+                  </div>
+                </button>
+              </li>
+              <li class="gallery-item">
+                <button class="gallery-btn btn-reset g3-btn" data-path="three">
+                  <span class="gallery-img gallery-img-3 bg-img"></span>
+                  <div class="gallery-desc">
+                    <p class="gallery__text">Mac and Cheese</p>
+                  </div>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="main-tabs">
+        <section class="shorus-tabs glavniy-tabs" data-target="one">
+          <div class="more__info"></div>
+          <div class="hero-tabs-container">
+            <div class="shorus-hero">
+              <h1 class="tab__title">Շուրոս</h1>
+              <h2 class="tab__subtitle">Համեղ և արագ իսպանական աղանդեր՝ Շուրոս</h2>
+              <p class="tab__text shorus__text">Առողջ և համեղ դեսերտ պատրաստելը միշտ պահանջում է ստեղծագործական մոտեցում
+                և
+                կամք, հատկապես երբ պետք է հրաժարվել ամենահամեղ բաղադրամասերից։</p>
+              <p class="tab__text shorus__text">Բայց երբ մենք արձակուրդում ենք, ահա այդ ժամանակ, մենք ուզում ենք վայելել
+                այն ամբողջությամբ, այսպիսով այս բաժնում ես ընդգրկել եմ արձակուրդից արձակուրդ պատրաստվող ուտեստները։</p>
+              <img class="tab__img" src="./img/shorush_1200.jpg" alt="Շուրոս">
+              <span class="cooking__time">Նախապատրաստում 5 րոպե</span>
+              <span class="cooking__time">Պատրաստում 15 րոպե</span>
+            </div>
+            <div class="hero-components">
+              <h2 class="tab__subtitle">Բաղադրամասեր</h2>
+              <img class="tab__img" src="./img/shorus-comp.webp" alt="Շուրոս Բաղադրամասեր">
+              <h3 class="tab__lesstitle">Շաքարավազի և դարչինի խառնուրդ</h3>
+              <ul>
+                <li class="tab__item">55 գ շաքարավազ</li>
+                <li class="tab__item">2 ճ/գ աղացած դարչին</li>
+                <li class="tab__item">1 տուփ (8գ )վանիլին </li>
+              </ul>
+              <h3 class="tab__lesstitle">Շուրոս</h3>
+              <ul>
+                <li class="tab__item">150 գ ալյուր</li>
+                <li class="tab__item">1 թ/գ փխրեցուցիչ</li>
+                <li class="tab__item">Մի պտղունց աղ</li>
+                <li class="tab__item">1 ճաշի գդալ բուսական յուղ, ես սովորաբար օգտագործում եմ կանոլայի յուղ (canola or
+                  colza oil)</li>
+                <li class="tab__item">250 մլ եռման ջուր</li>
+                <li class="tab__item">500 մլ այլ բուսական կամ կանոլայի յուղ՝ տապակելու համար</li>
+              </ul>
+              <h3 class="tab__lesstitle">Շոկոլադ</h3>
+              <ul>
+                <li class="tab__item">100 գ մուգ շոկոլադ կամ կիսաքաղցր շոկոլադե չիպսեր</li>
+                <li class="tab__item">100 մլ թանձր սերուցք</li>
+              </ul>
+            </div>
+            <div class="cooking">
+              <h2 class="tab__subtitle">Պատրաստում</h2>
+              <h3 class="tab__lesstitle">Շաքարավազի և դարչինի խառնուրդ</h3>
+              <p class="tab__item">Խառնել շաքարավազը, դարչինը և վանիլինը:</p>
+              <h3 class="tab__lesstitle">Խմոր</h3>
+              <ul>
+                <li class="tab__item">Թասի մեջ խառնել ալյուրը, փխրեցուցիչը և աղը:</li>
+                <li class="tab__item">Ավելացնել ձեթն ու ջուրը և խառնել, ստանալ թանձր, կպչուն խմոր։</li>
+                <li class="tab__item">Խմորը տեղափոխեք խմորի տոպրակի մեջ 8 մմ աստղանի ծայրով:</li>
+                <li class="tab__item">Տաքացնել բուսական յուղը, մոտավորապես 5 սմ՝ խորը տապակի մեջ։</li>
+                <li class="tab__item">Խմորը 15 սմ երկարությամբ լցնել յուղի մեջ, կտրել մկրատով (կտրեք յուղի մակերեսին
+                  մոտ՝
+                  շաղ տալուց
+                  խուսափելու համար):</li>
+                <li class="tab__item">Լցնել 3-ից 4, յուրաքանչյուր խմբաքանակի համար, ընդհանուր առմամբ կազմում է 10-ից 15:
+                </li>
+                <li class="tab__item">Տապակել 2-3 րոպե կամ մինչև ոսկեգույն դառնալը:</li>
+                <li class="tab__item">Պատրաստի շուրոն տեղափոխել թղթով պատված ափսեի վրա: </li>
+                <li class="tab__item">Յուրաքանչյուր շուրոն պատել շաքարավազի խառնուրդով։ </li>
+                <li class="tab__item">Մատուցել տաք շոկոլադե սոուսով:</li>
+              </ul>
+              <h3 class="tab__lesstitle">Շոկոլադի սոուս</h3>
+              <p class="tab__item">Խորը թավայի մեջ տաքացնել սերուցքը, ավելացնել շոկոլադը՝ խառնելով։Մի կողմ դնել 5
+                րոպեով,
+                որպեսզի սառչի և մի փոքր թանձրանա։</p>
+
+              <h4 class="testy__title">Բարի ախորժակ</h4>
+              <div>video</div>
+            </div>
+          </div>
+          <div class="more__info"></div>
+        </section>
+        <section class="salmon-tabs glavniy-tabs" data-target="two">
+          <div class="more__info"></div>
+          <div class="hero-tabs-container">
+            <div class="shorus-hero">
+              <h1 class="tab__title">Սաղմոն Ջեռոցում Բաթաթով և Սնկով</h1>
+              <h2 class="tab__subtitle">Համեղ և արագ</h2>
+
+              <span class="cooking__time">Նախապատրաստում 20 րոպե</span>
+              <span class="cooking__time">Պատրաստում 25 րոպե</span>
+              <span class="person__count">4 անձի համար</span>
+            </div>
+            <div class="hero-components">
+              <h2 class="tab__subtitle">Բաղադրամասեր</h2>
+              <ul>
+                <li class="tab__item">600գ սաղմոն, բաժանել 4 մասի</li>
+                <li class="tab__item">600 գ բաթաթ</li>
+                <li class="tab__item">16 սունկ</li>
+                <li class="tab__item">4 սմ թարմ կոճապղպեղ</li>
+                <li class="tab__item">8 ճաշի գդալ սոյայի սոուս</li>
+                <li class="tab__item">4 ճաշի գդալ ռեփի ձեթ</li>
+                <li class="tab__item">Համեմ</li>
+              </ul>
+            </div>
+            <div class="cooking">
+              <h2 class="tab__subtitle">Պատրաստում</h2>
+              <ul>
+                <li class="tab__item">Քաղցր կարտոֆիլը մաքրել և կտրարել փոքր խորանարդիկների:</li>
+                <li class="tab__item">Սունկը մաքրել, կտրատել։</li>
+                <li class="tab__item">Կոճապղպեղը մաքրել, բարակ շերտերով կտրատել։</li>
+                <li class="tab__item">Կտրել 4 թերթ մագաղաթյա թուղթ:</li>
+                <li class="tab__item">Տարածել քաղցր կարտոֆիլը, ապա սունկը և դնել սաղմոնի սթեյքերը:</li>
+                <li class="tab__item">Յուրաքանչյուր սթեյքին ավելացնել 2 ճաշի գդալ սոյայի սոուս և մեկ ճաշի գդալ ռեփի ձեթ
+                  կամ ցանկացած այլ բուսայուղ:</li>
+                <li class="tab__item">Շաղ տալ կոճապղպեղը և համեմը։</li>
+                <li class="tab__item">Փակեք յուրաքանչյուր թուղթ նվերի նման:</li>
+                <li class="tab__item">Ջեռոցում 180°-ում 30 րոպե։</li>
+              </ul>
+            </div>
+            <div class="testy-idea">
+              <h3 class="idea__title">Հնարք</h3>
+              <p class="idea__text">Պատրաստման այս եղանակով քաղցր կարտոֆիլը կարող է կիսաեփ մնալ։ Եթե ​​դա ձեզ
+                անհանգստացնում է, և նաև վերջնական ուտեստի պատրաստումն արագացնելու համար, կարող եք քաղցր կարտոֆիլը
+                նախորոք
+                10 րոպե եփել ջեռոցում։</p>
+            </div>
+            <div class="calories">
+              <p class="tab__text">Սննդային տեղեկատվություն 1 անձի համար՝</p>
+              <p class="tab__text">Կալորիաներ՝ 397 կկալորիա | Ածխաջրեր՝ 32 գ | Սպիտակուցներ՝ 39 գ | Ճարպեր՝ 12 գ |
+                Հագեցած
+                ճարպեր՝ 2 գ |
+                Պոլիչհագեցած ճարպեր՝ 5 գ | Մոնոչհագեցած ճարպեր՝ 4 գ | Մանրաթել՝ 5գ | Վիտամին C՝ 4 մգ | Վիտամին D՝ 1 մկգ
+                |
+                Վիտամին E՝ 1մգ | Վիտամին K՝ 3 մկգ| Կալցիում` 68 մգ | Երկաթ՝ 3 մգ
+              </p>
+              <img class="tab__img" src="./img/salmon-1200.webp" alt="Սաղմոն">
+            </div>
+          </div>
+          <div class="more__info"></div>
+        </section>
+        <section class="macchees-tabs glavniy-tabs" data-target="three">
+          <div class="more__info"></div>
+          <div class="hero-tabs-container">
+            <div class="shorus-hero">
+              <h1 class="tab__title">Mac and Chees</h1>
+              <h2 class="tab__subtitle">Համեղ և արագ</h2>
+
+              <span class="cooking__time">Նախապատրաստում 20 րոպե</span>
+              <span class="cooking__time">Պատրաստում 25 րոպե</span>
+              <span class="person__count">4 անձի համար</span>
+            </div>
+            <div class="hero-components">
+              <h2 class="tab__subtitle">Բաղադրամասեր</h2>
+              <!-- <ul>
+              <li class="tab__item">600գ սաղմոն, բաժանել 4 մասի</li>
+              <li class="tab__item">600 գ բաթաթ</li>
+              <li class="tab__item">16 սունկ</li>
+              <li class="tab__item">4 սմ թարմ կոճապղպեղ</li>
+              <li class="tab__item">8 ճաշի գդալ սոյայի սոուս</li>
+              <li class="tab__item">4 ճաշի գդալ ռեփի ձեթ</li>
+              <li class="tab__item">Համեմ</li>
+            </ul> -->
+            </div>
+            <div class="cooking">
+              <h2 class="tab__subtitle">Պատրաստում</h2>
+              <!-- <ul>
+              <li class="tab__item">Քաղցր կարտոֆիլը մաքրել և կտրարել փոքր խորանարդիկների:</li>
+              <li class="tab__item">Սունկը մաքրել, կտրատել։</li>
+              <li class="tab__item">Կոճապղպեղը մաքրել, բարակ շերտերով կտրատել։</li>
+              <li class="tab__item">Կտրել 4 թերթ մագաղաթյա թուղթ:</li>
+              <li class="tab__item">Տարածել քաղցր կարտոֆիլը, ապա սունկը և դնել սաղմոնի սթեյքերը:</li>
+              <li class="tab__item">Յուրաքանչյուր սթեյքին ավելացնել 2 ճաշի գդալ սոյայի սոուս և մեկ ճաշի գդալ ռեփի ձեթ
+                կամ ցանկացած այլ բուսայուղ:</li>
+              <li class="tab__item">Շաղ տալ կոճապղպեղը և համեմը։</li>
+              <li class="tab__item">Փակեք յուրաքանչյուր թուղթ նվերի նման:</li>
+              <li class="tab__item">Ջեռոցում 180°-ում 30 րոպե։</li>
+            </ul> -->
+            </div>
+            <div class="testy-idea">
+              <h3 class="idea__title">Հնարք</h3>
+              <!-- <p class="idea__text">Պատրաստման այս եղանակով քաղցր կարտոֆիլը կարող է կիսաեփ մնալ։ Եթե ​​դա ձեզ
+              անհանգստացնում է, և նաև վերջնական ուտեստի պատրաստումն արագացնելու համար, կարող եք քաղցր կարտոֆիլը նախորոք
+              10 րոպե եփել ջեռոցում։</p> -->
+            </div>
+            <div class="calories">
+              <p class="tab__text">Սննդային տեղեկատվություն 1 անձի համար՝</p>
+              <!-- <p class="tab__text">Կալորիաներ՝ 397 կկալորիա | Ածխաջրեր՝ 32 գ | Սպիտակուցներ՝ 39 գ | Ճարպեր՝ 12 գ | Հագեցած ճարպեր՝ 2 գ |
+              Պոլիչհագեցած ճարպեր՝ 5 գ | Մոնոչհագեցած ճարպեր՝ 4 գ | Մանրաթել՝ 5գ | Վիտամին C՝ 4 մգ | Վիտամին D՝ 1 մկգ |
+              Վիտամին E՝ 1մգ | Վիտամին K՝ 3 մկգ| Կալցիում` 68 մգ | Երկաթ՝ 3 մգ
+            </p> -->
+              <img class="tab__img" src="./img/mac&chees.122.webp" alt="">
+            </div>
+          </div>
+          <div class="more__info"></div>
+        </section>
+      </div>
   </main>
   <footer class="footer">
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
