@@ -22,28 +22,3 @@
 //   console.log(555);
 // })
 
-// ========== Glavniy =======
-const heroTabs = document.querySelectorAll('.glavniy-tabs');
-const heroTabsBtn = document.querySelectorAll('.gallery-btn')
-const mineHero = document.querySelector('.main-hero')
-
-
-heroTabsBtn.forEach(function (element) {
- 
-  element.addEventListener('click', function (e) {
-    const path = e.currentTarget.dataset.path;
-    console.log(e.currentTarget.dataset);
-    heroTabsBtn.forEach(function (el) {
-      el.classList.remove('active')
-    });
-    e.currentTarget.classList.add('active');
-
-    heroTabs.forEach(function (el) {
-      console.log(document.querySelector(`[data-target="${path}"]`));
-      el.classList.remove('active');
-      mineHero.classList.add('active')
-      document.querySelector(`[data-target="${path}"]`).classList.add('active')
-    })
-
-  })
-})

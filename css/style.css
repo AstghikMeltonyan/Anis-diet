@@ -52,7 +52,7 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1200px;
 }
 
 .header-container {
@@ -128,7 +128,7 @@ img {
 }
 
 .hero-nav__btn,
-.blog__btn,
+.hero-blog__btn,
 .about__btn {
   display: inline-block;
   padding: 16px 40px;
@@ -140,7 +140,7 @@ img {
 }
 
 .hero-nav__btn:hover,
-.blog__btn:hover,
+.hero-blog__btn:hover,
 .about__btn:hover {
   color: #fff;
   background: rgb(81, 46, 79);
@@ -155,8 +155,8 @@ img {
   width: 100%;
   background-image: url("../img/hero_1.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  background-size: 90% 120%;
+  background-position: top center;
   background-attachment: fixed;
 }
 
@@ -265,8 +265,8 @@ img {
   line-height: 32px;
 }
 
-.blog__btn {
-  width: 200px;
+.hero-blog__btn {
+  max-width: 240px;
   text-align: center;
 }
 
@@ -300,11 +300,15 @@ img {
   padding: 0;
 }
 
+.gallery-desc {
+  padding: 0 16px;
+}
+
 .gallery__text {
   width: 70%;
   height: 70px;
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
@@ -375,6 +379,7 @@ img {
 }
 
 .blog-page-btn {
+  display: block;
   height: 370px;
   margin-bottom: 50px;
 }
@@ -614,6 +619,21 @@ img {
   box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 5px 0px;
 }
 
+.footer-info {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: end;
+}
+
+.footer-info .aboutme-nav-item {
+  color: rgb(81, 46, 79);
+}
+
+.footer-info .aboutme-nav {
+  padding-top: 0;
+}
+
 /* ============================ Category =================== */
 .main-category {
   width: 100%;
@@ -824,6 +844,9 @@ img {
 .aboutme__text {
   margin: 0;
   width: 60%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .aboutme__text:first-of-type {
