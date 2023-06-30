@@ -29,7 +29,7 @@
 
 .hero-tabs-container {
   margin: 0 auto;
-  padding: 60px;
+  padding: 30px 60px;
   max-width: 980px;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -41,13 +41,14 @@
 .calories {
   margin: 0 auto;
   width: 90%;
-  padding: 60px;
+  padding: 20px 60px;
   background: rgba(255, 255, 255, 0.6);
 }
 
 .tab__title {
   margin: 0;
   margin-bottom: 40px;
+  padding-top: 40px;
   font-size: 50px;
   font-weight: 400;
   line-height: normal;
@@ -80,14 +81,15 @@
 }
 
 .tab__img {
-  width: 740px;
-  height: 740px;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
 .tab__item {
-  margin-bottom: 5px;
+  margin: 0;
+  margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.85);
   font-size: 18px;
   font-weight: 400;
@@ -99,9 +101,16 @@
 }
 
 .testy__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 30px;
   font-size: 26px;
   font-weight: 500;
   line-height: 30px;
+}
+
+.list-mb {
+  margin-bottom: 30px;
 }
 
 /* ================================= Salmon ====================== */
@@ -150,9 +159,22 @@
 
 .more__info {
   margin: 0 auto;
+  display: flex;
+  justify-content: end;
   max-width: 980px;
-  height: 100px;
+  min-height: 100px;
   background: #fff;
+}
+
+.more-info__nav {
+  font-size: 16px;
+  padding: 10px 40px 10px 20px;
+  color: rgb(121, 69, 119);
+}
+
+.more-info__nav:hover {
+  color: #fff;
+  background: rgb(121, 69, 119);
 }
 
 /* ======================== Avocado ================== */
@@ -174,4 +196,15 @@
   font-weight: 100;
   color: rgb(98, 26, 62);
   background-color: rgb(241, 222, 222);
+}
+
+.video-block {
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  /* object-fit: cover; */
+  width: 700px;
+  height: 680px;;
 }

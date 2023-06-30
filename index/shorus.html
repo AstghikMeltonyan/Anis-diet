@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="hy">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/shorus.css">
-    <title>nmeltonyan</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/shorus.css">
+  <title>nmeltonyan</title>
+</head>
+
 <body>
   <header class="header">
     <div class="container header-container">
@@ -80,8 +82,14 @@
   </header>
 
   <div class="main-tabs">
-    <section class="shorus-tabs glavniy-tabs" data-target="one">
-      <div class="more__info"></div>
+    <section class="shorus-tabs glavniy-tabs">
+      <div class="more__info">
+        <ul class="list-reset">
+          <li class="more-info__nav"><a href="#components">Բաղադրամասեր</a></li>
+          <li class="more-info__nav"><a href="#cooking">Պատրաստում</a></li>
+          <li class="more-info__nav"><a href="#video">Video</a></li>
+        </ul>
+      </div>
       <div class="hero-tabs-container">
         <div class="shorus-hero">
           <h1 class="tab__title">Շուրոս</h1>
@@ -96,16 +104,16 @@
           <span class="cooking__time">Պատրաստում 15 րոպե</span>
         </div>
         <div class="hero-components">
-          <h2 class="tab__subtitle">Բաղադրամասեր</h2>
+          <h2 class="tab__subtitle" id="components">Բաղադրամասեր</h2>
           <img class="tab__img" src="../img/shorus-comp.webp" alt="Շուրոս Բաղադրամասեր">
           <h3 class="tab__lesstitle">Շաքարավազի և դարչինի խառնուրդ</h3>
-          <ul>
+          <ul class="list-reset list-mb">
             <li class="tab__item">55 գ շաքարավազ</li>
             <li class="tab__item">2 ճ/գ աղացած դարչին</li>
             <li class="tab__item">1 տուփ (8գ )վանիլին </li>
           </ul>
           <h3 class="tab__lesstitle">Շուրոս</h3>
-          <ul>
+          <ul class="list-reset list-mb">
             <li class="tab__item">150 գ ալյուր</li>
             <li class="tab__item">1 թ/գ փխրեցուցիչ</li>
             <li class="tab__item">Մի պտղունց աղ</li>
@@ -115,17 +123,17 @@
             <li class="tab__item">500 մլ այլ բուսական կամ կանոլայի յուղ՝ տապակելու համար</li>
           </ul>
           <h3 class="tab__lesstitle">Շոկոլադ</h3>
-          <ul>
+          <ul class="list-reset list-mb">
             <li class="tab__item">100 գ մուգ շոկոլադ կամ կիսաքաղցր շոկոլադե չիպսեր</li>
             <li class="tab__item">100 մլ թանձր սերուցք</li>
           </ul>
         </div>
         <div class="cooking">
-          <h2 class="tab__subtitle">Պատրաստում</h2>
+          <h2 class="tab__subtitle" id="cooking">Պատրաստում</h2>
           <h3 class="tab__lesstitle">Շաքարավազի և դարչինի խառնուրդ</h3>
           <p class="tab__item">Խառնել շաքարավազը, դարչինը և վանիլինը:</p>
           <h3 class="tab__lesstitle">Խմոր</h3>
-          <ul>
+          <ul class="list-reset list-mb">
             <li class="tab__item">Թասի մեջ խառնել ալյուրը, փխրեցուցիչը և աղը:</li>
             <li class="tab__item">Ավելացնել ձեթն ու ջուրը և խառնել, ստանալ թանձր, կպչուն խմոր։</li>
             <li class="tab__item">Խմորը տեղափոխեք խմորի տոպրակի մեջ 8 մմ աստղանի ծայրով:</li>
@@ -147,12 +155,17 @@
             որպեսզի սառչի և մի փոքր թանձրանա։</p>
 
           <h4 class="testy__title">Բարի ախորժակ</h4>
-          <div>video</div>
+          <div class="video-block" id="video">
+            <video class="video" controls preload="auto">
+              <source src="../mp4/file.mp4">
+            </video>
+          </div>
         </div>
       </div>
       <div class="more__info"></div>
     </section>
   </div>
-  
+
 </body>
+
 </html>
