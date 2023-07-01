@@ -22,3 +22,8 @@
 //   console.log(555);
 // })
 
+const burgerBtn = document.querySelector('.button-burger');
+burgerBtn.addEventListener('click', function () {
+  burgerBtn.classList.toggle('change');
+  // burgerMenu.classList.toggle('header-nav--active');
+})

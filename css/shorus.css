@@ -82,7 +82,7 @@
 
 .tab__img {
   width: 600px;
-  height: 600px;
+  height: 700px;
   object-fit: cover;
   margin-bottom: 20px;
 }
@@ -207,4 +207,12 @@
   /* object-fit: cover; */
   width: 700px;
   height: 680px;;
+}
+
+/* =================== Shpinat ================== */
+
+.shpinat__subtitle {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-style: italic;
 }
