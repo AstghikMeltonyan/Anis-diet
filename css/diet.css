@@ -1,0 +1,243 @@
+.nutrition-container {
+  padding-top: 30px;
+}
+.nutrition-hero {
+  margin-bottom: 40px;
+  padding: 30px;
+  padding-top: 120px;
+}
+
+.main-nutrition {
+  width: 100%;
+  background-image: url("../img/blog.bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 100%;
+  background-attachment: fixed;
+}
+
+.nutrition-container {
+  max-width: 980px;
+  overflow: hidden;
+}
+
+.nutrition-bg {
+  /* min-height: 352px; */
+  /* background-image: url("../img/snndakarg.webp"); */
+  /* background-repeat: no-repeat;
+  background-size: cover;*/
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* background: rgba(255, 255, 255, .3); */
+}
+
+.nutrition-content {
+  min-height: 1500px;
+}
+
+
+/* ======================  Search block ============================ */
+.seach-form {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.input {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  min-width: 300px;
+  font-size: 22px;
+  color: rgb(81, 46, 79);
+  /* background: rgb(203, 188, 203); */
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(81, 46, 79);
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgba(81, 46, 79, .6);
+}
+
+.search-btn path {
+  stroke: rgb(81, 46, 79);
+}
+
+.hide {
+  display: none;
+}
+
+.nutrition-title {
+  margin: 0;
+  padding: 34px 46px;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 400;
+  color: rgb(81, 46, 79);
+  background: rgba(255, 255, 255, .3);
+}
+
+.nutrition-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nutrition-item {
+  min-width: 45%;
+  max-width: 45%;
+  height: 460px;
+  margin-bottom: 30px;
+  padding: 48px 48px 0 48px;
+  background: rgba(255, 255, 255, .8);
+}
+
+.nutrition-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 350px;
+  text-align: start;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.nutrition__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nutrition__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* .nutrition__img {
+  display: inline-block;
+  width: 358px;
+  height: 212px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+} */
+
+.nutrition__img1 {
+  background-image: url("../img/diet-1.webp");
+}
+
+.nutrition__img2 {
+  background-image: url("../img/diet-2..webp");
+}
+
+.nutrition__img3 {
+  background-image: url("../img/diet-3.webp");
+}
+
+.nutrition__img4 {
+  background-image: url("../img/diet-1.webp");
+}
+
+.nutrition__img5 {
+  background-image: url("../img/diet-5.webp");
+}
+
+.nutrition__img6 {
+  background-image: url("../img/diet-6.webp");
+}
+
+@media (max-width: 980px) {
+  .nutrition__img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nutrition-hero {
+    padding: 16px;
+    padding-top: 100px;
+  }
+
+  .nutrition-title {
+    padding: 24px 34px;
+  }
+
+  .nutrition-item {
+    min-width: 90%;
+  }
+
+}
+
+@media (max-width: 568px) {
+
+  .nutrition-hero {
+    margin-bottom: 10px;
+  }
+
+  .nutrition-container {
+    padding-top: 10px;
+  }
+
+  .nutrition-bg {
+    min-height: 100px;
+  }
+
+  .nutrition-title {
+    font-size: 34px;
+    padding: 12px 24px;
+  }
+  
+  .nutrition-item {
+    min-width: 90%;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 568px) {
+  .nutrition-hero {
+    padding: 0;
+    padding-top: 60px;
+  }
+  .input {
+    min-width: 240px;
+  }
+
+  .nutrition-title {
+    padding: 12px 24px;
+    font-size: 34px;
+
+    background: none;
+  }
+
+  .nutrition-list {
+    padding: 0;
+  }
+  
+  .nutrition-item {
+    min-width: 100%;
+  }
+
+  .nutrition__img {
+    width: 400px;
+    background-size: auto;
+  }
+}
+
+@media (max-width: 568px) {
+  .nutrition__img {
+    width: 200px;
+    background-size: auto;
+  }
+}

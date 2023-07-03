@@ -25,6 +25,7 @@ img {
   outline: none;
   border: none;
   background: transparent;
+  color: #000;
   cursor: pointer;
 }
 
@@ -393,64 +394,8 @@ img {
 .gallery-img-3 {
   background-image: url("../img/gallery-3-img.webp");
 }
-/* =================== Mine Blog ===================*/
-.main {
-  overflow: hidden;
-}
+/* =================== Article ===================*/
 
-.main-blog {
-  width: 100%;
-  height: 100%;
-  /* padding-top: 300px; */
-  background-image: url("../img/blog.bg-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-attachment: fixed;
-  overflow: hidden;
-}
-
-.blog-page-container {
-  overflow: hidden;
-  padding-top: 260px;
-}
-
-.blog-page-content {
-  max-width: 1120px;
-  min-height: 975px;
-  /* margin: 0 auto; */
-  /* padding-top: 60px; */
-  /* background: rgba(255, 255, 255, 0.3); */
-  overflow: hidden;
-}
-
-.blog-page-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.blog-page-item {
-  max-width: 360px;
-  margin-bottom: 20px;
-  min-height: 420px;
-  border: 1px solid rgb(203, 188, 203);
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.blog-page-btn {
-  display: block;
-  height: 370px;
-  margin-bottom: 50px;
-}
-
-.blog-page-desc {
-  padding: 0 15px;
-}
-
-.blog-page-date,
 .article__date {
   display: inline-block;
   margin-bottom: 20px;
@@ -459,82 +404,6 @@ img {
   line-height: normal;
 }
 
-.blog-page__title {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-.blog-page__text {
-  margin: 0;
-  margin-bottom: 16px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-}
-
-.blog-img-4 {
-  background-image: url("../img/blog-img-4.webp");
-}
-
-.blog-img-5 {
-  background-image: url("../img/blog-img-5.webp");
-}
-
-.blog-img-6 {
-  background-image: url("../img/blog-img-6.webp");
-}
-
-.view,
-.comment {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-}
-
-.view {
-  background-image: url("../img/view.svg");
-}
-
-.comment {
-  background-image: url("../img/comment.svg");
-}
-
-/* like *************************** */
-.like-heart {
-  opacity: 1;
-  fill: #e84a43;
-  stroke: none;
-}
-
-.blog-page-icons {
-  display: flex;
-  justify-content: end;
-}
-
-.blog-page-icons {
-  position: relative;
-  padding: 12px 16px;
-}
-
-.blog-page-icons::before {
-  content: "";
-  position: absolute;
-  top: -20%;
-  left: 10px;
-  height: 1px;
-  width: 90%;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.like path {
-  fill: rgba(0, 0, 0, 0);
-  stroke: rgb(0, 0, 0);
-  stroke-width: 1.5px;
-  transition: fill;
-}
 
 /* ================ Recipes ============== */
 .blog-page-section {
@@ -560,119 +429,6 @@ img {
 
 /* ====================== Nutrition ===================== */
 
-.nutrition-hero {
-  margin-bottom: 40px;
-  padding: 30px;
-  padding-top: 120px;
-}
-
-.main-nutrition {
-  width: 100%;
-  background-image: url("../img/blog.bg-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 60% 100%;
-  background-attachment: fixed;
-}
-
-.nutrition-container {
-  max-width: 980px;
-  overflow: hidden;
-}
-
-.nutrition-bg {
-  min-height: 352px;
-  background-image: url("../img/snndakarg.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nutrition-content {
-  min-height: 1500px;
-}
-
-.nutrition-title {
-  margin: 0;
-  padding: 34px 46px;
-  text-align: center;
-  font-size: 56px;
-  font-weight: 400;
-  color: rgb(81, 46, 79);
-  background: #fff;
-}
-
-.nutrition-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.nutrition-item {
-  max-width: 48%;
-  min-height: 400px;
-  margin-bottom: 30px;
-  padding: 48px;
-  background: #fff;
-}
-
-.nutrition-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: start;
-}
-
-.nutrition__subtitle {
-  margin: 0;
-  margin-bottom: 30px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.nutrition__text {
-  margin: 0;
-  margin-bottom: 30px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-.nutrition__img {
-  display: inline-block;
-  width: 358px;
-  height: 212px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.nutrition__img1 {
-  background-image: url("../img/diet-1.webp");
-}
-
-.nutrition__img2 {
-  background-image: url("../img/diet-2..webp");
-}
-
-.nutrition__img3 {
-  background-image: url("../img/diet-3.webp");
-}
-
-.nutrition__img4 {
-  background-image: url("../img/diet-1.webp");
-}
-
-.nutrition__img5 {
-  background-image: url("../img/diet-5.webp");
-}
-
-.nutrition__img6 {
-  background-image: url("../img/diet-6.webp");
-}
 /* ============ Footer ============ */
 .footer {
   width: 100%;
@@ -696,62 +452,6 @@ img {
   padding-top: 0;
 }
 
-/* ============================ Category =================== */
-.main-category {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("../img/blog.bg-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.category-container {
-  width: 1120px;
-  padding-top: 200px;
-}
-
-.category__title {
-  margin: 0;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 60px;
-  color: rgb(81, 46, 79);
-}
-
-.category-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.category-nav-list {
-  /* background: rgb(203, 188, 203); */
-  width: 32%;
-  border-top: none;
-}
-
-.category-nav-item {
-  padding: 30px;
-  color: rgb(81, 46, 79);
-  /* background: rgba(203, 188, 203, 0.9); */
-  background: rgba(204, 178, 204, 0.74);
-  transition: 0.3s background ease-in-out;
-}
-
-.category-nav-link {
-  width: 100%;
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 17px;
-}
-
-.category-nav-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.category-nav-item:hover {
-  background: rgba(232, 230, 230, 0.75);
-}
 
 /* ======================== Articles ======================== */
 .avocado-window {
@@ -906,9 +606,9 @@ img {
 .aboutme__text {
   margin: 0;
   width: 60%;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 34px;
 }
 
 .aboutme__text:first-of-type {
@@ -945,39 +645,6 @@ img {
 .aboutme-nav-item:not(:last-child),
 .aboutme-social-item:not(:last-child) {
   margin-right: 20px;
-}
-/* ======================  Search block ============================ */
-.seach-form {
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  padding: 40px 0;
-  margin-bottom: 20px;
-}
-
-.input {
-  display: inline-block;
-  padding: 20px;
-  margin-right: 10px;
-  min-width: 300px;
-  font-size: 22px;
-  color: rgb(81, 46, 79);
-  background: rgb(203, 188, 203);
-  border-radius: 20px;
-  border: none;
-  outline: none;
-}
-
-.input::placeholder {
-  color: rgb(81, 46, 79);
-}
-
-.search-btn path {
-  stroke: rgb(81, 46, 79);
-}
-
-.hide {
-  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -1097,6 +764,10 @@ img {
     margin-right: 0;
     width: 65%;
     height: 340px;
+  }
+
+  .footer {
+    min-height: 56px;
   }
 
   .aboutme-nav {
