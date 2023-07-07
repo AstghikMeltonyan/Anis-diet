@@ -1,0 +1,314 @@
+/* .main-hero,
+.hero-nav {
+  display: none;
+} */
+/* .main-tabs{
+  display: none;
+} */
+
+/* .shorus-tabs {
+  display: none;
+} */
+
+.main-tabs {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/avocado.bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.more__info {
+  position: fixed;
+  top: 240px;
+  left: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.more-info__nav {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 5px 15px;
+  margin-right: 10px;
+  color: rgb(0, 42, 3);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.more-info__nav:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.more-info__nav:hover {
+  color: #fff;
+  background: rgba(26, 83, 0, 0.6);
+}
+
+.shorus-tabs,
+.salmon-tabs,
+.macchees-tabs {
+  margin: 0 auto;
+  padding: 200px 40px 40px 40px;
+}
+
+.hero-tabs-container {
+  margin: 0 auto;
+  padding: 30px 60px;
+  max-width: 980px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.shorus-hero,
+.hero-components,
+.cooking,
+.testy-idea,
+.calories {
+  margin: 0 auto;
+  width: 90%;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.tab__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tab__subtitle,
+.tab__lesstitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: italic;
+  color: rgb(121, 69, 119);
+}
+
+.tab__text,
+.cooking__time {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.cooking__time {
+  display: block;
+  margin-bottom: 0;
+}
+
+.tab__img {
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.tab__item {
+  margin: 0;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tab__lesstitle {
+  font-size: 20px;
+}
+
+.testy__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.list-mb {
+  margin-bottom: 30px;
+}
+/* ================== Shorus =========== */
+
+/* ================================= Salmon ====================== */
+
+.person__count {
+  display: block;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.hero-tabs-container {
+  position: relative;
+}
+
+.testy-idea {
+  position: relative;
+}
+
+.idea__text::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 230px;
+  background: rgb(121, 69, 119);
+  left: 20px;
+  top: 26%;
+}
+
+.idea__title,
+.idea__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: italic;
+  color: rgb(121, 69, 119);
+}
+
+.idea__text {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+/* ======================== Avocado ================== */
+.lovelyavocado__text {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(121, 69, 119);
+  font-style: none;
+}
+
+.clickme {
+  display: inline-block;
+  padding: 18px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 100;
+  color: rgb(98, 26, 62);
+  background-color: rgb(241, 222, 222);
+}
+
+.video-block {
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  /* object-fit: cover; */
+  width: 700px;
+  height: 680px;
+}
+
+/* =================== Shpinat ================== */
+
+.shpinat__subtitle {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+@media (max-width: 980px) {
+  .hero-tabs-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .more-info__nav {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-tabs-container {
+    background: none;
+  }
+
+  .shorus-hero,
+  .hero-components,
+  .cooking,
+  .testy-idea,
+  .calories {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .tab__img {
+    height: 460px;
+  }
+}
+
+@media (max-width: 568px) {
+
+  .shorus-tabs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .shorus__text {
+    width: 90%;
+  }
+
+  .more__info {
+    top: 120px;;
+  }
+
+  .more-info__nav {
+    width: 200px;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  .shorus__text {
+    width: 100%;
+  }
+
+  .tab__title {
+    font-size: 36px;
+  }
+
+  .tab__subtitle {
+    font-size: 18px;
+  } 
+
+  .tab__text  {
+    font-size: 16px;
+  }
+
+  .tab__img {
+    height: 320px;
+  }
+
+  
+  .shorus-hero,
+  .hero-components,
+  .cooking,
+  .testy-idea,
+  .calories {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+}

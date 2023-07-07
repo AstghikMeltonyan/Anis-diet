@@ -1,0 +1,94 @@
+@media (max-width: 1200px) {
+  .aboutme-content {
+    padding-left: 30px;
+  }
+
+  .aboutme__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 980px) {
+  .my-pic {
+    margin-right: 40px;
+    padding: 0;
+    background-color: transparent;
+    text-align: start;
+    font-size: 0;
+  }
+
+  .aboutme__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme-block {
+    flex-direction: column;
+  }
+
+  .my-pic {
+    width: 100%;
+    margin-right: 0;
+    padding: 40px;
+    background-color: rgb(148, 132, 161);
+    text-align: center;
+    font-size: 0;
+  }
+
+  .aboutme-content {
+    width: 74%;
+    padding: 40px;
+  }
+
+  .aboutme__text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme-info {
+    height: 100px;
+  }
+
+  .aboutme-content {
+    width: 74%;
+    padding: 40px;
+  }
+  .aboutme__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 568px) {
+  .aboutme-container {
+    padding: 12px;
+    padding-top: 140px;
+  }
+
+  .my-pic {
+    padding: 0;
+  }
+
+  .aboutme-content {
+    width: 76%;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .aboutme-container {
+    padding: 12px;
+    padding-top: 140px;
+  }
+
+  .my-pic {
+    padding: 0;
+  }
+
+  .aboutme-content {
+    width: 100%;
+    padding: 40px 14px;
+  }
+}
+

@@ -132,13 +132,10 @@ img {
 }
 
 .header-social-item {
+  display: block;
   padding: 4px 6px;
   border-radius: 5px;
   font-size: 18px;
-}
-
-.header-social-item:not(:last-child) {
-  margin-right: 14px;
 }
 
 .header-social-item svg g {
@@ -586,11 +583,7 @@ img {
   padding: 40px;
   background-color: rgb(148, 132, 161);
   text-align: center;
-}
-
-.my-pic img {
-  width: 450px;
-  height: 600px;
+  object-fit: cover;
 }
 
 .aboutme-content {
