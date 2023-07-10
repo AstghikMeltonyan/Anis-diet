@@ -227,14 +227,21 @@
   font-style: italic;
 }
 
+@media (max-width: 1200px) {
+  .more__info {
+    top: 100px;
+  }
+}
+
 @media (max-width: 980px) {
+  .more__info {
+    position: absolute;
+    top: -100px;
+}
+
   .hero-tabs-container {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .more-info__nav {
-    width: 100px;
   }
 }
 
@@ -259,7 +266,6 @@
 }
 
 @media (max-width: 568px) {
-
   .shorus-tabs {
     padding-left: 0;
     padding-right: 0;
@@ -270,13 +276,12 @@
   }
 
   .more__info {
-    top: 120px;;
+    top: 120px;
   }
 
   .more-info__nav {
     width: 200px;
   }
-  
 }
 
 @media (max-width: 320px) {
@@ -290,9 +295,9 @@
 
   .tab__subtitle {
     font-size: 18px;
-  } 
+  }
 
-  .tab__text  {
+  .tab__text {
     font-size: 16px;
   }
 
@@ -300,7 +305,6 @@
     height: 320px;
   }
 
-  
   .shorus-hero,
   .hero-components,
   .cooking,
@@ -309,6 +313,4 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-
-
 }

@@ -131,32 +131,32 @@ img {
   padding: 0 20px;
 }
 
-.header-social-item {
+.socila-item {
   display: block;
   padding: 4px 6px;
   border-radius: 5px;
   font-size: 18px;
 }
 
-.header-social-item svg g {
+.socila-item svg g {
   fill: rgb(81, 46, 79);
 }
 
-.header-social-item svg path,
-.header-social-item svg circle {
+.socila-item svg path,
+.socila-item svg circle {
   stroke: rgb(81, 46, 79);
 }
 
-.header-social-item:hover {
+.socila-item:hover {
   background: rgb(81, 46, 79);
 }
 
-.header-social-item:hover svg path,
-.header-social-item:hover svg circle {
+.socila-item:hover svg path,
+.socila-item:hover svg circle {
   stroke: #fff;
 }
 
-.header-social-item:hover svg g {
+.socila-item:hover svg g {
   fill: #fff;
 }
 
@@ -241,10 +241,6 @@ img {
   border-radius: 5px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
-
-/* .hero1-img:hover {
-  
-} */
 
 .about-desc {
   max-width: 328px;
@@ -439,6 +435,11 @@ img {
   justify-content: end;
   flex-direction: column;
   align-items: end;
+  padding-top: 20px;
+}
+
+.footer-social {
+  padding: 0 40px;
 }
 
 .footer-info .aboutme-nav-item {
@@ -670,7 +671,7 @@ img {
     flex-direction: column;
     background: rgb(203, 188, 203);
     padding: 40px;
-    transition: 0.6s all ease-in-out;
+    transition: 0.4s all ease-in-out;
   }
 
   .nav-list.active {
