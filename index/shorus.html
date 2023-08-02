@@ -46,14 +46,15 @@
   <div class="main-tabs">
     <section class="shorus-tabs glavniy-tabs">
       <div class="hero-tabs-container">
+        <a class="btn__up vec__svg" href="#title"></a>
         <ul class="list-reset more__info">
           <li class="more-info__nav"><a href="#components">Բաղադրամասեր</a></li>
           <li class="more-info__nav"><a href="#cooking">Պատրաստում</a></li>
           <li class="more-info__nav"><a href="#video">Video</a></li>
         </ul>
         <div class="shorus-hero">
-         <button onclick="window.history.back()" class="btn__back btn-reset"></button>
-          <h1 class="tab__title shorus__title">Շուրոս</h1>
+         <button class="btn__back vec__svg btn-reset"></button>
+          <h1 class="tab__title shorus__title" id="title">Շուրոս</h1>
           <h2 class="tab__subtitle">Համեղ և արագ իսպանական աղանդեր՝ Շուրոս</h2>
           <p class="tab__text shorus__text">Առողջ և համեղ դեսերտ պատրաստելը միշտ պահանջում է ստեղծագործական մոտեցում
             և
@@ -146,12 +147,6 @@
     </div>
   </footer>
   <script src="../js/script.js"></script>
-  <script>
-    const btnBack = document.querySelector('.btn__back')
-    btnBack.addEventListener('click', ()=>{
-      console.log(btnBack);
-    })
-  </script>
 </body>
 
 </html>

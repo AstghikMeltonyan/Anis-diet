@@ -6,3 +6,8 @@ burgerBtn.addEventListener("click", function () {
   navList.classList.toggle("active");
 });
 
+const btnBack = document.querySelector('.btn__back')
+btnBack.addEventListener('click', () =>{
+  window.history.back()
+})
+

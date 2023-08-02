@@ -1,0 +1,23 @@
+.salmon__back {
+  top: 3%;
+}
+
+@media (max-width: 980px) {
+  .salmon__back {
+    left: 12%;
+  }
+}
+
+@media (max-width: 768px) {
+  .salmon__back {
+    top: 2%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 568px) {
+  .salmon__back {
+    top: 2%;
+    left: 4%;
+  }
+}
