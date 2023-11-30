@@ -289,7 +289,7 @@
   .tab__img {
     height: 460px;
   }
-  
+
   .btn__up {
     position: fixed;
     top: 93%;
@@ -302,12 +302,11 @@
     height: 160px;
     left: 5px;
     top: 26%;
+  }
 }
 
-
-
 @media (max-width: 568px) {
-  .shorus-tabs, 
+  .shorus-tabs,
   .salmon-tabs {
     padding-left: 0;
     padding-right: 0;

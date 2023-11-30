@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/hero.css">
   <title>nmeltonyan</title>
+  <script defer src="./js/script.js"></script>
 </head>
 
 <body>
@@ -20,23 +21,22 @@
           <span class="burger-line bar3"></span>
         </button>
         <ul class="nav-list list-reset">
-          <li class="nav-item nav-hero"><a class="nav__link" href="./index.html">Գլխավոր</a>
+          <li class="nav-item nav-hero"><a class="nav__link" href="./nutrition.html">Գլխավոր</a>
             <div class="hero-nav">
               <span class="hero-nav__text">Ապացուցողական</span>
               <span class="hero-nav__text">Սննդաբանություն</span>
               <a href="#" class="hero-nav__btn">Նորություններ</a>
             </div>
           </li>
-          <li class="nav-item"><a class="nav__link" href="./index/blog.html" target="_self">Բլոգ</a></li>
-          <li class="nav-item"><a class="nav__link" href="./index/diet.html" target="_blank">Սննդակարգեր</a></li>
-          <li class="nav-item"><a class="nav__link" href="./index/category.html" target="_blank">Կատեգորիա</a></li>
-          <li class="nav-item"><a class="nav__link" href="./index/about.html" target="_blank">Տեղեկություն</a></li>
+          <li class="nav-item"><a class="nav__link" href="./navigation/blog.html" target="_self">Բլոգ</a></li>
+          <li class="nav-item"><a class="nav__link" href="./navigation/diet.html" target="_blank">Սննդակարգեր</a></li>
+          <li class="nav-item"><a class="nav__link" href="./navigation/category.html" target="_blank">Կատեգորիա</a></li>
+          <li class="nav-item"><a class="nav__link" href="./navigation/about.html" target="_blank">Տեղեկություն</a></li>
           <li class="nav-item"><a class="nav__link" href="#">Կապ</a></li>
         </ul>
       </nav>
       <div class="header-social">
-        <a class="socila-item" href="https://www.instagram.com/food_nutrition_cuisines/"
-          class="aboutme-social__link">
+        <a class="socila-item" href="https://www.instagram.com/food_nutrition_cuisines/" class="aboutme-social__link">
           <svg width="28px" height="30px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
             <path stroke="none" stroke-width="14"
               d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z" />
@@ -78,37 +78,32 @@
               <p class="blog__text">Find new recipes, meal plans, menu, learn what are the latest discoveries in
                 nutritional science.
               </p>
-              <a href="./index/blog.html" class="hero-blog__btn">Կարդալ ավելին</a>
+              <a href="./navigation/blog.html" class="hero-blog__btn">Կարդալ ավելին</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="news">
         <div class="container gallery-container">
           <ul class="gallery-list list-reset">
             <li class="gallery-item">
-              <!-- <a href="./index/shorus.html" target="_blank"> -->
-              <a href="./index/shorus.html"> <!--aranc blank atributi kashxati het gnalu knopkan-->
+              <!-- <a href="./navigation/shorus.html" target="_blank"> -->
+                <!-- aranc blank atributi kashxati het gnalu knopkan -->
+              <a href="./navigation/shorus.html"> 
                 <span class="gallery-img gallery-img-1 bg-img"></span>
-                <div class="gallery-desc">
-                  <p class="gallery__text">Շուրոս</p>
-                </div>
+                <p class="gallery__text">Շուրոս</p>
               </a>
             </li>
             <li class="gallery-item">
-              <a class="gallery-btn" href="./index/salmon.html" target="_blank">
+              <a class="gallery-btn" href="./navigation/salmon.html" target="_blank">
                 <span class="gallery-img gallery-img-2 bg-img"></span>
-                <div class="gallery-desc">
-                  <p class="gallery__text">Սաղմոն Ջեռոցում Բաթաթով և Սնկով</p>
-                </div>
+                <p class="gallery__text">Սաղմոն Ջեռոցում Բաթաթով և Սնկով</p>
               </a>
             </li>
             <li class="gallery-item">
-              <a class="gallery-btn" href="./index/macchees.html" target="_blank">
+              <a class="gallery-btn" href="./navigation/macchees.html" target="_blank">
                 <span class="gallery-img gallery-img-3 bg-img"></span>
-                <div class="gallery-desc">
-                  <p class="gallery__text">Mac and Cheese</p>
-                </div>
+                <p class="gallery__text">Mac and Cheese</p>
               </a>
             </li>
           </ul>
@@ -128,7 +123,7 @@
           </svg></a>
       </div>
       <ul class="aboutme-nav list-reset">
-        <li class="aboutme-nav-item"><a href="../index.html">Գլխավոր</a></li>
+        <li class="aboutme-nav-item"><a href="./index.html">Գլխավոր</a></li>
         <li class="aboutme-nav-item"><a href="../blog.html">Բլոգ</a></li>
         <li class="aboutme-nav-item"><a href="../diet.html">Սննդակարգեր</a></li>
         <li class="aboutme-nav-item"><a href="../category.html">Կատեգորիա</a></li>
@@ -136,7 +131,6 @@
       </ul>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
 </body>
 
 </html>

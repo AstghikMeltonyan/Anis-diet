@@ -132,6 +132,12 @@ img {
 }
 
 .socila-item {
+  /* background-image: url('../img/instagram-svgrepo-com.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px; */
   display: block;
   padding: 4px 6px;
   border-radius: 5px;
@@ -148,7 +154,8 @@ img {
 }
 
 .socila-item:hover {
-  background: rgb(81, 46, 79);
+  opacity: .8;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);;
 }
 
 .socila-item:hover svg path,
@@ -159,7 +166,6 @@ img {
 .socila-item:hover svg g {
   fill: #fff;
 }
-
 
 .hero-nav {
   position: absolute;
@@ -326,7 +332,7 @@ img {
 }
 
 /* ================ Gallery =============== */
-.gallery {
+.news {
   background: #fff;
 }
 
@@ -355,15 +361,12 @@ img {
   padding: 0;
 }
 
-.gallery-desc {
-  padding: 0 16px;
-}
-
 .gallery__text {
   width: 70%;
   height: 70px;
+  padding: 0 16px;
   margin: 0;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   line-height: 30px;
 }
@@ -580,6 +583,7 @@ img {
 
 .my-pic {
   width: 55%;
+  height: 850px;
   margin-right: 80px;
   padding: 40px;
   background-color: rgb(148, 132, 161);
